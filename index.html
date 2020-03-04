@@ -31,7 +31,7 @@
           background: #4285f4;
           border-radius: 2px;
           font-size: 13px;
-          margin-top: 10px;
+          margin-top: 13px;
         }
 
 
@@ -46,8 +46,8 @@
         <ul>
           <li><a href="">About</a></li>
           <li><a href="">Store</a></li>
-          <li style="float:right"><button id="button">Sign In</button></li>
-          <li style="float:right"><img src="https://i.ibb.co/G2Jq9Xw/waffle.png" alt="waffle" height="40" width="40"></a></li>
+          <li style="float:right"><button type="button" id="button">Sign In</button></li>
+          <li style="float:right; margin-top:3px"><img src="https://i.ibb.co/G2Jq9Xw/waffle.png" alt="waffle" height="40" width="40"></a></li>
           <li style="float:right"><a href="">Images</a></li>
           <li style="float:right"><a href="">Gmail</a></li>
       </header>
@@ -60,9 +60,50 @@
           margin-left: auto;
           margin-right: auto;
         }
+
+        #searchbox{
+          display: block;
+          margin-top: 10px;
+          margin-left: auto;
+          margin-right: auto;
+          width: 500px;
+          height: 35px;
+          border-radius: 25px;
+          border-color: hsl(0, 0%, 85%);
+          border-style:solid;
+          background-image: url("https://i.ibb.co/qnBfYCQ/find-512.png");
+          background-position: left;
+          background-repeat:no-repeat;
+          background-size:contain;
+          padding-left: 40px;
+        }
+
+        .buttons{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin-top: 20px;
+
+
+
+
+        }
+        #buttons{
+          background: hsl(0, 0%, 90%);
+          color: hsl(0, 0%, 47%);
+          border-style: solid;
+          border-radius: 2px;
+          padding: 7px 7px 7px 7px;
+        }
+
         </style>
       <img  id="logo" src ="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
 
+      <input id="searchbox" class="searchform" maxlength="2048" name="q" type="text" title="Search">
+<div class="buttons">
+      <button style="margin-right:18px" id="buttons"> Google Search</button>
+      <button id="buttons"> I'm Feeling Lucky</button>
+</div>
     </body>
 
   </html>
