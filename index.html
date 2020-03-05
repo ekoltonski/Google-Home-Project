@@ -1,15 +1,19 @@
 <!doctype html>
   <html>
   <head>
+    <!-- Rules for view port -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <style>
 
+/* ul= full list rules li= item in list li a=link action */
         ul {
           list-style-type: none;
           margin: 0;
           padding: 0;
           overflow: hidden;
             }
+
         li{
           float: left;
             }
@@ -35,6 +39,7 @@
           margin-top: 13px;
         }
 
+/* Sets footer rules. If not here background-color would only appear around text */
         footer{
           color:#2222;
           background-color:#3211;
@@ -43,11 +48,6 @@
           bottom:0;
           width:100%;
         }
-
-
-
-
-
     </style>
 
 
@@ -55,6 +55,8 @@
     </head>
 
       <header>
+
+<!-- style="float:right" pushes individual items and flips order. Probably could have done this with CSS -->
         <ul>
           <li><a href="">About</a></li>
           <li><a href="">Store</a></li>
@@ -62,9 +64,11 @@
           <li style="float:right; margin-top:3px"><img src="https://i.ibb.co/G2Jq9Xw/waffle.png" alt="waffle" height="40" width="40"></a></li>
           <li style="float:right"><a href="">Images</a></li>
           <li style="float:right"><a href="">Gmail</a></li>
+
       </header>
 
     <body>
+
       <style>
         #logo{
           display: block;
@@ -83,6 +87,7 @@
           border-radius: 25px;
           border-color: hsl(0, 0%, 85%);
           border-style:solid;
+/* Code below adds image to search box */
           background-image: url("https://i.ibb.co/qnBfYCQ/find-512.png");
           background-position: left;
           background-repeat:no-repeat;
@@ -95,11 +100,8 @@
           flex-direction: row;
           justify-content: center;
           margin-top: 20px;
-
-
-
-
         }
+
         #buttons{
           background: hsl(0, 0%, 90%);
           color: hsl(0, 0%, 47%);
@@ -109,6 +111,7 @@
         }
 
         </style>
+<!-- Code below until /body is all the HTML for this section -->
       <img  id="logo" src ="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
 
       <input id="searchbox" class="searchform" maxlength="2048" name="q" type="text" title="Search">
